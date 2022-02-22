@@ -19,5 +19,4 @@ function addQuote(quote, idNum) {
     adNum.innerHTML = "#" + idNum;
 }
 
-document.body.onload = getQuotes
 adButton.addEventListener("click", () => getQuotes())
