@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+  </style>
+  <style>
+
+    #adButton:hover {
+      transition: all 0.5s ease-in-out;
+      box-shadow: 0 0 20px 4px hsl(150, 100%, 66%);
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            LightCyan: 'hsl(193, 38%, 86%)',
+            NeonGreen: 'hsl(150, 100%, 66%)',
+            GrayishBlue: '#313A49',
+            DarkGrayishBlue: '#202632',
+          }
+        }
+      }
+    }
+  </script>
+  <title> Advice Generator App </title>
+</head>
+<body style="font-family: 'Manrope', sans-serif;" class="bg-DarkGrayishBlue">
+  <main class="flex flex-col items-center justify-center my-60">
+
+    <div style="box-shadow: 0 20px 50px #181c24;" class="flex flex-col items-center text-center bg-GrayishBlue py-12 pb-20 gap-5 w-11/12 lg:w-2/5 rounded-xl">
+      <h3 class="tracking-widest text-NeonGreen text-sm lg:text-base font-semibold"> ADVICE <p id="adNum" class="inline">  </p></h3>
+      <p id="adContent" class="w-10/12 lg:w-2/3 text-2xl lg:text-3xl text-white font-bold">  </p>
+      <img src="./images/pattern-divider-desktop.svg" alt="divider" class="relative w-10/12 top-2 mt-3">
+    </div>
+
+    <button id="adButton" class="bg-NeonGreen p-4 lg:p-5 rounded-full relative -top-8"> <img src="./images/icon-dice.svg"> </button>
+
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
